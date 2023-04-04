@@ -6,7 +6,6 @@ Results show that RetinaFace face detection has average precision (AP) results o
 
 Link Paper: [CMBN Journal](https://scik.org/index.php/cmbn/article/view/7872)
 
-Data Preparing
 
 ## Data Preparation
 
