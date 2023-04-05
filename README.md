@@ -30,12 +30,12 @@ After downloading do this:
 
 
 
-Arface menerima inputsize gambar 112 x 112 | FaceNet menerima input size gambar 160 x 160 anda bisa mengubah ini sebelum menentukan model face recognition yang ingin digunakan
+Arface accepts an image input size of 112 x 112 | FaceNet accepts an input image size of 160 x 160. You can change this before deciding which face recognition model you want to use.
 
 ```ruby
 def extract_face(filename, required_size=(112, 112)): #face net 160 x 160 /arc face 112 x 112
 ```
-Pada function extract face ganti komen antara  kedua detector ini jika ingin menggunakan MTCNN atau RetinaFace
+In the extract face function, change the comments between these two detectors if you want to use MTCNN or RetinaFace
 ```ruby
 #Using RetinaFace Detector
 detector = face_detection(pixels)
@@ -46,10 +46,7 @@ detector = face_detection(pixels)
  # results = detector.detect_faces(pixels)
 ```
 
-pada bagian markdown section Embedding dengan Model ArcFace
-
-anda bisa mengkomen  line of code jika ingin menggunakan model face recognition yang berbeda dari facenet.h5 yang telah diesktraksi tadi, dan ArcFace
-
+There is a markdown section 'Embedding with the ArcFace Model' you can comment on the line of code if you want to use a different face recognition model from the facenet.h5 that was extracted earlier, and ArcFace
 ```ruby
 # model = load_model('facenet_keras.h5') #pre trained model yang udah dilatih facenet
 model = loadModelArcFace() # arcface dengan input 112 ,112 , 3
